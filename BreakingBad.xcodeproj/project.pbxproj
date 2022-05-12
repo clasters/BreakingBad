@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12AAC2A9282D983F00DEE02E /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAC2A8282D983F00DEE02E /* APIConfiguration.swift */; };
+		12AAC2AB282D986900DEE02E /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAC2AA282D986900DEE02E /* APIRouter.swift */; };
+		12AAC2AE282D98A900DEE02E /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAC2AD282D98A900DEE02E /* URLConstant.swift */; };
+		12AAC2B0282D98CB00DEE02E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAC2AF282D98CB00DEE02E /* APIClient.swift */; };
+		12AAC2B2282D9CDE00DEE02E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAC2B1282D9CDE00DEE02E /* Character.swift */; };
 		12CF913F282D7F1F00229836 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF913E282D7F1F00229836 /* BreakingBadApp.swift */; };
 		12CF9141282D7F1F00229836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF9140282D7F1F00229836 /* ContentView.swift */; };
 		12CF9143282D7F2000229836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CF9142282D7F2000229836 /* Assets.xcassets */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12AAC2A8282D983F00DEE02E /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		12AAC2AA282D986900DEE02E /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		12AAC2AD282D98A900DEE02E /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		12AAC2AF282D98CB00DEE02E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		12AAC2B1282D9CDE00DEE02E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		12CF913B282D7F1F00229836 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CF913E282D7F1F00229836 /* BreakingBadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApp.swift; sourceTree = "<group>"; };
 		12CF9140282D7F1F00229836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +51,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12AAC2A4282D8E8500DEE02E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				12AAC2A8282D983F00DEE02E /* APIConfiguration.swift */,
+				12AAC2AA282D986900DEE02E /* APIRouter.swift */,
+				12AAC2AF282D98CB00DEE02E /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		12AAC2A5282D8E8C00DEE02E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12CF9140282D7F1F00229836 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12AAC2A6282D8E9000DEE02E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12AAC2A7282D8E9600DEE02E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12AAC2B1282D9CDE00DEE02E /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12AAC2AC282D988800DEE02E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				12AAC2AD282D98A900DEE02E /* URLConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		12CF9132282D7F1F00229836 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +113,12 @@
 		12CF913D282D7F1F00229836 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
+				12AAC2AC282D988800DEE02E /* Constants */,
+				12AAC2A4282D8E8500DEE02E /* Networking */,
+				12AAC2A7282D8E9600DEE02E /* Model */,
+				12AAC2A6282D8E9000DEE02E /* ViewModel */,
+				12AAC2A5282D8E8C00DEE02E /* View */,
 				12CF913E282D7F1F00229836 /* BreakingBadApp.swift */,
-				12CF9140282D7F1F00229836 /* ContentView.swift */,
 				12CF9142282D7F2000229836 /* Assets.xcassets */,
 				12CF9147282D7F2000229836 /* Persistence.swift */,
 				12CF9149282D7F2000229836 /* BreakingBad.xcdatamodeld */,
@@ -94,7 +149,6 @@
 				96D2E3B8CEE006A92DEFF6E8 /* Pods-BreakingBad.debug.xcconfig */,
 				AAE9D6BE675E9789D9067890 /* Pods-BreakingBad.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,8 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AAC2B2282D9CDE00DEE02E /* Character.swift in Sources */,
 				12CF9148282D7F2000229836 /* Persistence.swift in Sources */,
+				12AAC2AB282D986900DEE02E /* APIRouter.swift in Sources */,
 				12CF9141282D7F1F00229836 /* ContentView.swift in Sources */,
+				12AAC2B0282D98CB00DEE02E /* APIClient.swift in Sources */,
+				12AAC2AE282D98A900DEE02E /* URLConstant.swift in Sources */,
+				12AAC2A9282D983F00DEE02E /* APIConfiguration.swift in Sources */,
 				12CF914B282D7F2000229836 /* BreakingBad.xcdatamodeld in Sources */,
 				12CF913F282D7F1F00229836 /* BreakingBadApp.swift in Sources */,
 			);

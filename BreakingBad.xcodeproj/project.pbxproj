@@ -13,6 +13,7 @@
 		12CF9146282D7F2000229836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CF9145282D7F2000229836 /* Preview Assets.xcassets */; };
 		12CF9148282D7F2000229836 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF9147282D7F2000229836 /* Persistence.swift */; };
 		12CF914B282D7F2000229836 /* BreakingBad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12CF9149282D7F2000229836 /* BreakingBad.xcdatamodeld */; };
+		8EAD9654D0E4F94BF7B7290E /* Pods_BreakingBad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E76C02CC7C9C239A2ABB0 /* Pods_BreakingBad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,9 @@
 		12CF9145282D7F2000229836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12CF9147282D7F2000229836 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		12CF914A282D7F2000229836 /* BreakingBad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreakingBad.xcdatamodel; sourceTree = "<group>"; };
+		3F4E76C02CC7C9C239A2ABB0 /* Pods_BreakingBad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D2E3B8CEE006A92DEFF6E8 /* Pods-BreakingBad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBad/Pods-BreakingBad.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE9D6BE675E9789D9067890 /* Pods-BreakingBad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad.release.xcconfig"; path = "Target Support Files/Pods-BreakingBad/Pods-BreakingBad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAD9654D0E4F94BF7B7290E /* Pods_BreakingBad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,8 @@
 			children = (
 				12CF913D282D7F1F00229836 /* BreakingBad */,
 				12CF913C282D7F1F00229836 /* Products */,
+				ECFFC624686F7DF136D64505 /* Pods */,
+				88BF8BF880290EA0C31B9AC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		88BF8BF880290EA0C31B9AC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F4E76C02CC7C9C239A2ABB0 /* Pods_BreakingBad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECFFC624686F7DF136D64505 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96D2E3B8CEE006A92DEFF6E8 /* Pods-BreakingBad.debug.xcconfig */,
+				AAE9D6BE675E9789D9067890 /* Pods-BreakingBad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12CF914E282D7F2000229836 /* Build configuration list for PBXNativeTarget "BreakingBad" */;
 			buildPhases = (
+				AE41D0420667C3CEAD30A894 /* [CP] Check Pods Manifest.lock */,
 				12CF9137282D7F1F00229836 /* Sources */,
 				12CF9138282D7F1F00229836 /* Frameworks */,
 				12CF9139282D7F1F00229836 /* Resources */,
+				18D24A6F74C0357B6EEEB804 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D24A6F74C0357B6EEEB804 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE41D0420667C3CEAD30A894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12CF9137282D7F1F00229836 /* Sources */ = {
@@ -269,6 +338,7 @@
 		};
 		12CF914F282D7F2000229836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D2E3B8CEE006A92DEFF6E8 /* Pods-BreakingBad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +368,7 @@
 		};
 		12CF9150282D7F2000229836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE9D6BE675E9789D9067890 /* Pods-BreakingBad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
